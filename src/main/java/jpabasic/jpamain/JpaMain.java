@@ -1,7 +1,6 @@
 package jpabasic.jpamain;
 
-import jpabasic.Order;
-import jpabasic.OrderItem;
+import jpabasic.Book;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -17,14 +16,11 @@ public class JpaMain {
         EntityTransaction tx = entityManager.getTransaction();
         tx.begin();
         try{
+            Book book = new Book();
+            book.setName("JPA");
+            book.setAuthor("김영한");
 
-//            Order order = new Order();
-//            entityManager.persist(order);
-//
-//            OrderItem orderItem = new OrderItem();
-//            orderItem.setOrders(order);
-//
-//            entityManager.persist(orderItem);
+            entityManager.persist(book);
 
             tx.commit();
 

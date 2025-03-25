@@ -7,7 +7,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "ORDERS") // db에서 order가 예약어로 걸러져있어서 안되는 db가 존재함
-public class Order {
+public class Order extends BaseEntity{
 
     @Id
     @Column(name = "ORDER_ID")

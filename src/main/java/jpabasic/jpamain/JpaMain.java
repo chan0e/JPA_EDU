@@ -18,13 +18,13 @@ public class JpaMain {
         tx.begin();
         try{
 
-            Order order = new Order();
-            entityManager.persist(order);
-
-            OrderItem orderItem = new OrderItem();
-            orderItem.setOrders(order);
-
-            entityManager.persist(orderItem);
+//            Order order = new Order();
+//            entityManager.persist(order);
+//
+//            OrderItem orderItem = new OrderItem();
+//            orderItem.setOrders(order);
+//
+//            entityManager.persist(orderItem);
 
             tx.commit();
 

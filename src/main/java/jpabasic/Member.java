@@ -1,9 +1,6 @@
 package jpabasic;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Member {
@@ -14,6 +11,7 @@ public class Member {
     private Long id;
     private String name;
     private String city;
+
     private String street;
     private String zipcode;
 
